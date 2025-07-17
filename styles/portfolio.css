@@ -7,7 +7,6 @@
   font-variation-settings:
     "wdth" 100;
 }
-
 /* shared style */
 .secondary-bg{
     background-color: #FFF8F3;
@@ -178,4 +177,43 @@ footer input[type="text"],  footer input[type="email"], footer textarea{
     padding: 10px 20px;
     margin-bottom: 24px;
     border: none;
+}
+
+/* Responsive For mobile screen */
+@media screen and (max-width: 576px) {
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-items,
+    .banner,
+    nav,
+    nav > ul{
+        flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
+    }
+    .banner{
+        margin: 20px;
+    }
+    footer,.about{
+        padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"],  footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+    .header{
+        background-image: none;
+    }
+    .banner-profile-pic{
+        width: 100%;
+    }
+}
+/* Tablet Specific media query */
+
+@media screen and (min-width: 576px) and (max-width:990px) {
+    
 }
